@@ -5,7 +5,8 @@ with the highest mark.
 Sample Input: student_scores = [('Alice', 85), ('Bob', 90), ('Charlie', 80)]
 Sample Output: {'Alice': 85, 'Bob': 90, 'Charlie': 80}
                             Top Student: Bob with 90 marks
-                            """
+
+"""
 
 
 def student_marks(student_scores):
@@ -20,7 +21,6 @@ student_scores = [('Alice', 85), ('Bob', 90), ('Charlie', 80)]
 student_dict, top_student_info = student_marks(student_scores)
 print(student_dict)
 print(top_student_info)
-
 
 
 
