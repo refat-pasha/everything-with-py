@@ -8,6 +8,7 @@ class Developer(Employee):
     def __init__(self,programming_lang,exp_year):
         self.programming_lang = programming_lang
         self.exp_year = exp_year
+
     def display(self):
         print(f"Developer Name : {self.name} \nID : {self.employee_id} "
               f"Programming Language : {self.programming_lang} \nExprience Year : {self.exp_year}")
