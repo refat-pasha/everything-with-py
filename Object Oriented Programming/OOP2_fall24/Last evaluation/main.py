@@ -1,5 +1,3 @@
-
-
 from abc import ABC, abstractmethod
 
 class Order(ABC):
@@ -63,6 +61,7 @@ class InStoreOrder(Order):
 online_order = OnlineOrder("xyz", delivery_charge=25)
 online_order.add_item("Laptop", 1000, 1)
 online_order.add_item("Mouse", 50, 2)
+online_order.add_item("cleaning kit", 50, 5)
 online_order.get_order_details()
 
 print("\n")
