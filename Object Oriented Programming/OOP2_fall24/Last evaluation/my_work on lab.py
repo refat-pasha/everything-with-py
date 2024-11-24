@@ -18,17 +18,17 @@ class OnlineOrder(Order):
         self.quantity = quantity
         self.delivery_charge = delivery_charge
 
-
+    def calculate_total(self,price,quantity,delivery_charge):
+        total = 0
+        total = (price*quantity)+delivery_charge
+        print(f"Total price: {total}")
 
     def get_order_details(self,order_id,name,price,quantity):
         items = [name,price,quantity]
         print(f"Online Order ID : {order_id}\n"
               f"Items:{items}\n")
 
-    def calculate_total(self,price,quantity,delivery_charge):
-        total = 0
-        total = (price*quantity)+delivery_charge
-        print(f"Total price: {total}")
+
 
 
 
