@@ -12,10 +12,10 @@ class BankAccount(ABC):
     def get_balance(self):
         pass
 class SavingAccount(BankAccount):
-    def __init__(self, dep_bal, with_bal, bal=0):
+    def __init__(self, dep_bal, with_bal ):
         self.dep_bal = dep_bal
         self.with_bal = with_bal
-        self.bal = bal
+        self.bal = 0
         self.deposit()
         self.withdraw()
 
